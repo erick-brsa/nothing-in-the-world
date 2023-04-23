@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700family=Raleway:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --header-height: 3.5rem;
+
+  /*======= Colors =======*/
+  --first-color: hsl(166, 16%, 30%);
+  --first-color-alt: hsl(171, 16%, 62%);
+  --second-color: hsl(36, 24%, 35%);
+  --second-color-alt: hsl(31, 30%, 52%);
+  --accent-color: hsl(40, 97%, 50%);
+  --accent-color-alt: hsl(40, 100%, 47%);
+  --body-color: hsl(260, 100%, 97%);
+  --titile-color: hsl(206, 4%, 20%);
+  --text-color: hsl(206, 4%, 34%);
+  --text-color-light: hsl(206, 4%, 50%);
+
+  /*======= Typography =======*/
+  --body-font: "Inter", sans-serif;
+  --second-font: "Raleway", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--body-color);
+  font-family: var(--body-font) ;
+  font-size: 1rem;
+  color: var(--text-color);
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--second-font);
+  color: var(--titile-color)
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  text-indent: 0;
+  list-style-type: none;
+}
