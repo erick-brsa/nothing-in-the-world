@@ -1,0 +1,31 @@
+/* .home__container {} */
+
+.home__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    min-height: calc(80vh - var(--header-height));
+}
+
+.home__info-title {
+    font-size: 6rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.home__info-description {
+    color: var(--text-color-light);
+
+}
+
+.home__content-img {
+    width: 90%;
+    border-radius: 1rem;
+}
+
+.somesection__container {
+    height: 500px;
+    background-color: var(--body-color-alt);
+}

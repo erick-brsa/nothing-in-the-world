@@ -1,9 +1,16 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { Layout } from './components/Layout'
+import { Home } from './views'
+
 const App = () => {
   return (
-    <div>
-      <h1>HELLOW</h1>
-      <p>HOLA</p>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={ <Layout /> } >
+          <Route index element={ <Home /> } />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   )
 }
 

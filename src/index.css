@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700family=Raleway:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap');
 
 :root {
   --header-height: 3.5rem;
@@ -10,8 +10,9 @@
   --second-color-alt: hsl(31, 30%, 52%);
   --accent-color: hsl(40, 97%, 50%);
   --accent-color-alt: hsl(40, 100%, 47%);
-  --body-color: hsl(260, 100%, 97%);
-  --titile-color: hsl(206, 4%, 20%);
+  --body-color: hsl(222, 100%, 97%);
+  --body-color-alt: #889696;
+  --title-color: hsl(206, 4%, 20%);
   --text-color: hsl(206, 4%, 34%);
   --text-color-light: hsl(206, 4%, 50%);
 
@@ -35,12 +36,30 @@ body {
   font-family: var(--body-font) ;
   font-size: 1rem;
   color: var(--text-color);
-  min-height: 100vh;
+  min-height: calc(100vh - var(--header-height));
+  margin-top: var(--header-height);
 }
+
+/* Hide the default scrollbar */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Define your custom scrollbar styles */
+::-webkit-scrollbar-track {
+  background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #000000;
+  border-radius: 10px;
+}
+
+
 
 h1, h2, h3, h4 {
   font-family: var(--second-font);
-  color: var(--titile-color)
+  color: var(--title-color)
 }
 
 a {
@@ -54,4 +73,24 @@ ul {
 li {
   text-indent: 0;
   list-style-type: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+footer {
+  margin-top: auto;
+}
+
+#root {
+  min-height: calc(100vh - var(--header-height));
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
 }
